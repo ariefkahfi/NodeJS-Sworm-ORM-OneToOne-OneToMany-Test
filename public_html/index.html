@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index Page</title>
+    <!--
+        ip1 : localhost
+        ip2 : 192.168.43.x (HP)
+        ip3 : 192.168.1.x (Modem)
+    -->
+    <link rel="stylesheet" href="http://localhost:9600/css/index.css"/>
+    <link rel="stylesheet" href="http://localhost:9600/css/responsive.css"/>
+
+    <!--<link rel="stylesheet" href="http://localhost:9600/css/toggleStyles.css"/>-->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--<link rel="stylesheet" href="http://localhost/libs/css/font-awesome.min.css"/>-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>-->
+</head>
+<body>
+    <nav id="top-nav">
+        <h3 id="title-navbar">SekolahApp</h3>
+        <div id="toggle-right-nav-item-container">
+            <i class="fa fa-list fa-fw"></i>
+        </div>
+        <div id="right-nav-item-container">
+              <a class="right-nav-item"><i class="fa fa-home fa-fw" aria-hidden="true"></i>Home</a>
+              <a class="right-nav-item"><i class="fa fa-phone fa-fw"></i>Contact</a>
+              <a class="right-nav-item"><i class="fa fa-cog fa-fw"></i>Settings</a>
+        </div>
+    </nav>
+
+    <nav id="left-nav">
+
+        <div class="left-nav-item-container">
+           <h4 class="left-nav-item-container-title">Actions</h4>
+           <h4 class="left-nav-item-container-title-tablet" id="left-nav-actions-tablet">Actions</h4>
+
+           <div class="left-nav-item-content-container" id="left-nav-dropdown1">
+               <a class="left-nav-item-content" id="new-student-a-click"><i class="fa fa-tag fa-fw pointer" aria-hidden="true"></i>New Students</a>
+               <a class="left-nav-item-content" id="new-homeroom-a-click"><i class="fa fa-graduation-cap fa-fw"></i>New Homeroom Teacher</a>
+               <a class="left-nav-item-content" id="new-class-a-click"><i class="fa fa-university fa-fw"></i>New Class</a>
+               <a class="left-nav-item-content" id="new-homeroom-for-class-a-click"><i class="fa fa-tags fa-fw"></i>New Homeroom For Class</a>
+           </div>
+        </div>
+
+
+        <div class="left-nav-item-container">
+
+            <h4 class="left-nav-item-container-title">List</h4>
+            <h4 class="left-nav-item-container-title-tablet" id="left-nav-list-tablet">List</h4>
+
+            <div class="left-nav-item-content-container" id="left-nav-dropdown2">
+                <a class="left-nav-item-content" id="list-student-container-a-click"><i class="fa fa-users fa-fw"></i>Student List</a>
+                <a class="left-nav-item-content" id="list-homeroom-teacher-container-a-click"><i class="fa fa-user fa-fw"></i>Homeroom teacher List</a>
+                <a class="left-nav-item-content" id="list-class-container-a-click"><i class="fa fa-university fa-fw"></i>Class List</a>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <!-- start list-student container  -->
+    <div class="container shadow-boxes" id="list-student-container">
+        <h1 class="container-title">List Student</h1>
+        <div class="table-container">
+            <table class="table" id="table-student" border="2">
+                <tr>
+                    <td>Name</td>
+                    <td>Address</td>
+                    <td>Gender</td>
+                    <td>Class Name</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- end list-student container -->
+
+    <!-- start  homeroom-teacher container -->
+    <div class="container shadow-boxes" id="list-homeroom-teacher-container">
+        <h1 class="container-title" id="container-homeroom-title">List Homeroom Teacher</h1>
+        <div class="table-container">
+            <table class="table" id="table-homeroom" border="2">
+                <tr>
+                    <td>Name</td>
+                    <td>Gender</td>
+                    <td>Address</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- end  homeroom-teacher container -->
+
+    <!-- start class-container -->
+    <div class="container shadow-boxes" id="list-class-container">
+        <h1 class="container-title">List Class</h1>
+
+        <div class="table-container">
+            <table class="table" id="table-class" border="2">
+                <tr>
+                    <td>Class Name</td>
+                    <td>Homeroom Teacher Name</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <!-- end class-container -->
+
+    <!--start new-homeroom-for-class -->
+    <div class="container shadow-boxes" id="new-homeroom-for-class-container">
+        <h1 class="container-title">New Homeroom for Class</h1>
+        <div class="form-container">
+
+            <div class="form-control clearfix">
+                <label for="label_select_id_kelas">Class ID</label>
+                <div id="label_select_id_kelas">
+                    <select id="select_id_kelas">
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-control clearfix">
+                <label for="label_select_id_wali">Homeroom Teacher ID</label>
+                <div id="label_select_id_wali">
+                    <select id="select_id_wali">
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-control">
+                <button class="btn-primary" id="submit-homeroom-for-class">Submit Data</button>
+            </div>
+        </div>
+    </div>
+    <!--end new-homeroom-for-class -->
+
+    <!-- start new-student-container (first view) -->
+    <div class="container shadow-boxes" id="new-student-container">
+        <h1 class="container-title">New Students</h1>
+
+        <div class="form-container">
+
+            <div class="form-control clearfix">
+                <label for="id_murid">Student ID</label>
+                <input type="text" class="input" id="id_murid" placeholder="Student ID"/>
+            </div>
+
+            <div class="form-control clearfix">
+                <label for="nama_murid">Student Name</label>
+                <input type="text" class="input" id="nama_murid" placeholder="Student Name"/>
+            </div>
+
+            <div class="form-control clearfix">
+                <label for="alamat_murid">Student Address</label>
+                <input type="text" class="input" id="alamat_murid" placeholder="Student Address"/>
+            </div>
+
+            <div class="form-control clearfix">
+                <label for="jenkel-murid">Gender</label>
+                <div id="jenkel-murid" class="form-control-addon">
+                    <div class="form-control-radio">
+                        <input type="radio" name="jenkel" value="Male"/><span>Male</span>
+                    </div>
+                    <div class="form-control-radio">
+                        <input type="radio" name="jenkel" value="Female"/><span>Female</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-control clearfix">
+                <label for="kelas-id">Class ID</label>
+                <div id="kelas-id" class="form-control-addon">
+                    <select id="select_kelas">
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-control clearfix">
+                <button class="btn-primary" id="save-student">Save Data</button>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end new-student-container (first view) -->
+
+    <!-- start new-homeroom-teacher-container -->
+    <div class="container shadow-boxes" id="new-homeroom-teacher">
+        <h1 class="container-title">New Homeroom Teacher</h1>
+        <div class="form-container">
+
+            <div class="form-control clearfix">
+                <label for="wali-id">Homeroom Teacher ID</label>
+                <input type="text" class="input" placeholder="Homeroom teacher ID" id="wali-id"/>
+            </div>
+
+            <div class="form-control clearfix">
+                <label for="wali-nama">Homeroom Teacher Name</label>
+                <input type="text" class="input" placeholder="Homeroom Teacher Name" id="wali-nama"/>
+            </div>
+
+            <div class="form-control clearfix">
+                <label for="wali-alamat">Homeroom Teacher Address</label>
+                <input type="text" class="input" placeholder="Homeroom Teacher Address" id="wali-alamat"/>
+            </div>
+
+            <div class="form-control clearfix">
+                <label for="wali-jenkel">Homeroom Teacher Gender</label>
+                <div id="wali-jenkel" class="form-control-addon">
+                    <div class="form-control-radio">
+                        <input type="radio" name="jenkel" value="Male"/><span>Male</span>
+                    </div>
+                    <div class="form-control-radio">
+                        <input type="radio" name="jenkel" value="Female"/><span>Female</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-control">
+                <button class="btn-primary" id="save-wali-kelas">Save Data</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- end new-homeroom-teacher-container -->
+
+    <!-- start new-class container -->
+    <div class="container shadow-boxes" id="new-class-container">
+        <h1 class="container-title">New Class</h1>
+        <div class="form-container">
+
+            <div class="form-control clearfix">
+              <label for="new-kelas-id">Class ID</label>
+              <input type="text" id="new-kelas-id" placeholder="Class ID"/>
+            </div>
+
+            <div class="form-control clearfix">
+              <label for="new-nama-kelas">Class Name</label>
+              <input type="text" id="new-nama-kelas" placeholder="Class Name"/>
+            </div>
+
+            <div class="form-control">
+                <button class="btn-primary" id="save-class">Save Data</button>
+            </div>
+        </div>
+    </div>
+    <!-- end new-class container-->
+
+</body>
+    <script src="http://localhost:9600/js/mainApp.bundle.js"></script>
+</html>

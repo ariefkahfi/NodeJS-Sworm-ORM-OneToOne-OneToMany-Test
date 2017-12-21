@@ -1,0 +1,194 @@
+/*default-red : #F44336*/
+/*default-body-background-color : #DFDFDF*/
+/*default-primary-black :#616161*/
+/*default-secondary-black : #3F3F3F*/
+/*default-primary-blue : #488DD8*/
+
+body{
+    margin : 0;
+    background-color: #DFDFDF;
+}
+
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*clearfix style*/
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/*clearfix style*/
+
+/*table*/
+.table{
+    width: 100%;
+}
+.table-container{
+    padding : 5px;
+}
+/*table*/
+
+/*top-nav style*/
+#top-nav{
+    background-color: #3F3F3F;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.3);
+}
+#title-navbar{
+    margin : 0;
+    color : white;
+    padding : 10px;
+    display: inline-block;
+}
+#right-nav-item-container{
+    float : right;
+    margin :12px 12px;
+    color : white;
+}
+.right-nav-item{
+    margin : 0 7px 0 7px;
+    cursor: pointer;
+}
+/*#toggle-right-nav-item-container{*/
+    /*color : white;*/
+    /*padding : 5px;*/
+    /*display: none;*/
+/*}*/
+/*top-nav style*/
+
+
+
+/*left-nav-fixed style*/
+.left-nav-item-container-title-tablet{
+    padding : 5px;
+    cursor: pointer;
+}
+#left-nav{
+    background-color: #F44336;
+    position: fixed;
+    width: 250px;
+    left : 0;
+    top :43px;
+    padding : 5px;
+    /*z-index: -1;*/
+    transition: top 200ms;
+    bottom :0;
+}
+.left-nav-item-container{
+    padding : 5px;
+}
+.left-nav-item-container h4{
+    margin : 0;
+    color : white;
+}
+.left-nav-item-content-container{
+    margin-left : 10px;
+    color : white;
+}
+.left-nav-item-content{
+    display: block;
+    margin : 10px 0 10px 0;
+    cursor: pointer;
+}
+
+
+/*left-nav-fixed style*/
+
+/*shadow-boxes class*/
+.shadow-boxes{
+    box-shadow:
+            0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.2),
+            0 4px 8px 0 rgba(0,0,0,0.1),
+            0 4px 8px 0 rgba(0,0,0,0.1);
+}
+/*shadow-boxes class*/
+
+/*container class*/
+
+
+
+.container{
+    background-color: white;
+    margin-top : 22px;
+    margin-left : 256px;
+    margin-right : 5px;
+    margin-bottom : 10px;
+}
+.container-title{
+    margin : 0;
+    background-color: #F44336;
+    color : white;
+    padding : 5px;
+}
+/*container class*/
+
+
+/*btn classes*/
+.btn-primary{
+    background-color: #488DD8;
+    border : 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    color : white;
+    padding : 7px;
+    cursor: pointer;
+}
+.btn-red{
+    background-color: #F44336;
+    border : 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    margin : 2px;
+    color : white;
+    padding : 7px;
+    cursor: pointer;
+}
+/*btn classes*/
+
+/*util classes*/
+.fill-it{
+    /*width : 100%;*/
+}
+/*util classes*/
+
+
+/*form classes*/
+.form-control-addon{
+    float: left;
+}
+.form-control{
+    padding : 5px;
+    margin : 2px;
+}
+.form-control .input{
+    float : left;
+}
+.form-control label{
+    float : left;
+    width : 145px;
+    margin-top : 4px;
+}
+.form-control-radio{
+    padding : 5px;
+}
+/*form classes*/
+
+
+/*new-student-container style*/
+
+.form-container{
+    background-color: white;
+    border-radius: 2px;
+}
+#jenkel-murid{
+
+}
+#kelas-id{
+
+}
+/*new-student-container style*/
+
+

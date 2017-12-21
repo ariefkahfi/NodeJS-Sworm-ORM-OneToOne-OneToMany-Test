@@ -1,0 +1,99 @@
+
+/*@media screen and (max-width : 960px){*/
+    /*body{*/
+        /*background-color: crimson;*/
+    /*}*/
+/*}*/
+
+@media screen and (max-width : 768px){
+    /*body{*/
+        /*background-color: dodgerblue;*/
+    /*}*/
+
+
+    #left-nav{
+        position: static;
+        width: auto;
+    }
+    .container{
+        margin-left : 5px;
+    }
+}
+
+@media screen and (max-width : 648px){
+    /*body{*/
+        /*background-color: yellowgreen;*/
+    /*}*/
+
+    .left-nav-item-container{
+        padding : 0;
+    }
+    .left-nav-item-container-title{
+        padding : 5px;
+        cursor: pointer;
+    }
+    .left-nav-item-content-container{
+        padding : 5px;
+    }
+    .form-control {
+        /*background-color: yellowgreen;*/
+    }
+
+    #left-nav{
+        margin : 5px;
+        padding : 0;
+    }
+    .form-control-addon{
+        float :none;
+    }
+
+    .form-control-addon #select_kelas{
+        width: 100%;
+    }
+
+    .form-control-radio{
+
+    }
+
+
+    .form-control label{
+        display: block;
+        width: auto;
+        float: none;
+    }
+    .form-control .input{
+        display: block;
+        width: 100%;
+        float: none;
+    }
+}
+
+@media screen and (max-width : 500px){
+    /*body {*/
+        /*background-color: aqua;*/
+    /*}*/
+    .container-title{
+        font-size: 15px;
+    }
+    /*#right-nav-item-container{*/
+        /*display: none;*/
+    /*}*/
+    /*.right-nav-item{*/
+        /*display: block;*/
+    /*}*/
+
+    /*#toggle-right-nav-item-container{*/
+        /*display: inline-block;*/
+        /*cursor: pointer;*/
+        /*!*background-color: #F44336;*!*/
+        /*padding : 12px;*/
+        /*float: right;*/
+    /*}*/
+
+    #top-nav{
+
+    }
+    #left-nav{
+
+    }
+}
